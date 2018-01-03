@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EventLogger</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_help">help</string>
+
+    <string name="next">NEXT</string>
+    <string name="not_remember">Forgot password?</string>
+    <string name="pass_forget">RECOVER YOUR PASSWORD</string>
+    <string name="login">SIGN IN</string>
+    <string name="title_activity_locationatmap">Map</string>
+
+
+</resources>

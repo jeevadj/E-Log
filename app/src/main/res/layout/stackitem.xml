@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_google_signin_btn_text_light_disabled"
+    android:orientation="vertical">
+
+    <StackView
+        android:id="@+id/stackview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

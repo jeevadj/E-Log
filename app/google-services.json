@@ -1,0 +1,118 @@
+
+{
+  "project_info": {
+    "project_number": "294679680857",
+    "firebase_url": "https://fir-18ecb.firebaseio.com",
+    "project_id": "fir-18ecb",
+    "storage_bucket": "fir-18ecb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294679680857:android:14ac59186dd32877",
+        "android_client_info": {
+          "package_name": "com.example.kiruba.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294679680857-u4hmo6f9tb1g81gb07upeigeiug6vcf0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kiruba.firebase",
+            "certificate_hash": "fb14859ed8d53de1ddd29c81c1f3a3df752b7197"
+          }
+        },
+        {
+          "client_id": "294679680857-plic7sog0bbvbcigu3ss2vur7tt6d4if.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-3PfZDbQujdykdKEWDlgY5YiVwSPewpY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294679680857-plic7sog0bbvbcigu3ss2vur7tt6d4if.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294679680857:android:b9ace745173d407e",
+        "android_client_info": {
+          "package_name": "com.example.hp.mail.Activity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294679680857-plic7sog0bbvbcigu3ss2vur7tt6d4if.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-3PfZDbQujdykdKEWDlgY5YiVwSPewpY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294679680857:android:8785f5d34a23eee4",
+        "android_client_info": {
+          "package_name": "com.example.hp.mail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294679680857-plic7sog0bbvbcigu3ss2vur7tt6d4if.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-3PfZDbQujdykdKEWDlgY5YiVwSPewpY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

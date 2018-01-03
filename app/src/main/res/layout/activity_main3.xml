@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.hp.mail.Activity.Main3Activity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="127dp"
+        android:background="@drawable/layout5"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="96dp"-->
+        <!--android:layout_height="96dp"-->
+        <!--android:layout_below="@+id/textView5"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="68dp"-->
+        <!--android:elevation="7dp"-->
+        <!--android:src="@drawable/speech"-->
+        <!--app:civ_border_color="#fff"-->
+        <!--app:civ_border_width="2dp" />-->
+
+    <com.github.zagum.speechrecognitionview.RecognitionProgressView
+        android:id="@+id/recognition_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+
+</RelativeLayout>

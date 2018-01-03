@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/progressBarSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateTint="#f58220"
+        android:indeterminateTintMode="src_in"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layoutSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/progressBarSecond"
+        android:layout_toRightOf="@+id/progressBarSecond"
+        android:layout_toEndOf="@+id/progressBarSecond">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:elevation="7dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DhamoKrish"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/layout8"
+            android:hint="Password"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:password="true"
+            android:pointerIcon="none"
+            android:textColorLink="@android:color/holo_orange_light" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/layout9"
+            android:elevation="4dp"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pass_forget_description"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pass_forget"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/pass_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:padding="4dp"
+        android:text="Forget Password?"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <TextView
+        android:id="@+id/Incorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutSecond"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color2" />
+</RelativeLayout>

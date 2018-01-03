@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/eventimage"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:elevation="7dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    app:civ_border_color="@color/cardview_light_background"
+                    app:civ_border_width="2dp" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/event_layout"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/event"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/event_layout"
+
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Event Name"
+                    android:padding="2dp"
+                    android:textColorLink="?attr/actionMenuTextColor"
+                    android:textSize="18sp" />
+                <!--android:drawableEnd="@drawable/ic_action_e"-->
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/color7"
+                android:layout_height="2px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+
+            <TextView
+            android:text="Enter the Start Date and Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:gravity="center"
+            android:background="@drawable/layout2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            tools:background="@drawable/layout2" />
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="Starting Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/startingdate"
+                android:gravity="center"
+                android:background="@drawable/event_layout"
+                android:layout_alignParentStart="false"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:clickable="false"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/dat1"
+                android:id="@+id/fab1"
+                app:backgroundTint="@android:color/holo_green_light"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentEnd="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:text="Starting Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/startingtime"
+                android:background="@drawable/event_layout"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+            </LinearLayout>
+
+            <TextView
+            android:text="Enter the End Date and Time"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/startingtime"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textStyle="normal|italic"
+            android:background="@drawable/layout2"
+            android:layout_alignParentLeft="true" />
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="Ending Date"
+                android:layout_width="wrap_content"
+                android:id="@+id/enddate"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/event_layout"
+                android:layout_below="@+id/textView6"
+                android:layout_alignStart="@+id/startingdate"
+                android:layout_weight="1.3"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_margin="10dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/dat1"
+                android:id="@+id/fab2"
+                app:backgroundTint="@android:color/holo_green_light"
+                android:layout_below="@+id/textView6"
+                android:layout_alignStart="@+id/fab1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/startingtime"
+                    android:layout_below="@+id/fab2"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/event_layout"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Ending time"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <Spinner
+                android:background="@drawable/event_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:spinnerMode="dialog"
+                android:layout_margin="10dp"
+                android:padding="10dp" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/color7"
+                android:layout_height="2px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"></View>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/event_layout"
+
+                android:hint="Location"
+
+                android:paddingLeft="6dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/color7"
+                android:layout_height="2px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"></View>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/event_layout"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description "
+                    android:id="@+id/description"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/mdtp_white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/setEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/event_button"
+                android:elevation="10dp"
+                android:text="S E T   E V E N T"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
